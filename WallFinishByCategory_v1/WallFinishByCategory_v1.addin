@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type ="Command">
+    <Assembly>WallFinishByCategory_v1.dll</Assembly>
+    <ClientId>5878c677-bcdd-4620-873a-7677616d38fe</ClientId>
+    <FullClassName>WallFinishByCategory_v1.StartPluginCommand</FullClassName>
+    <Text>InfoBIM_WallFinish</Text>
+    <Description>Create wall finish by categoties</Description>
+    <VendorId>Shishmarev Ruslan Andreevich</VendorId>
+    <VendorDescription>InfoBIM, www.infobim.ru</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>

@@ -1,0 +1,102 @@
+﻿<Window x:Class="WallFinishByCategory_v1.View.HelpPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WallFinishByCategory_v1.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Background="White"
+        MinHeight="300px" MinWidth="200px" Height="400px" Width="500px">
+    <Window.Resources>
+        <Style TargetType="Window">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="Image">
+            <Setter Property="Visibility" Value="Visible"/>
+            <Setter Property="Width" Value="400px"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="0, 1, 0, 1"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40px"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20px"/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="150px"/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="1" Grid.Column="0"/>
+        <Border Grid.Row="1" Grid.Column="1"/>
+        <Border Grid.Row="3" Grid.Column="0"/>
+        <Border Grid.Row="3" Grid.Column="1"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="0"
+                    HorizontalAlignment="Right" Grid.Column="1" Margin="0,0,-0.4,0">
+            <TextBlock Text="Language" VerticalAlignment="Center"/>
+            <ComboBox x:Name="LanguageCheckView"
+                      Width="60px"
+                      Margin="5, 0"
+                      SelectionChanged="LanguageCheckView_SelectionChanged"/>
+        </StackPanel>
+        <Label Content="1" 
+               Grid.Column="0" Grid.Row="1"
+               HorizontalContentAlignment="Center"/>
+        <Label x:Name="RecLabelView" Content="Recommendation" 
+               Grid.Column="1" Grid.Row="1"
+               HorizontalContentAlignment="Center"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.Row="2">
+            <StackPanel   ScrollViewer.CanContentScroll="True">
+                <TextBlock x:Name="RecText1" Text="1."/>
+                <TextBlock x:Name="RecText2" Text="2."/>
+                <TextBlock x:Name="RecText3" Text="3."/>
+            </StackPanel>
+        </ScrollViewer>
+        <Label Content="2" 
+               Grid.Column="0" Grid.Row="3"
+               HorizontalContentAlignment="Center"/>
+        <Label x:Name="InstLabelView" Content="Instruction" 
+               Grid.Column="1" Grid.Row="3"
+               HorizontalContentAlignment="Center"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="1" Grid.Row="4">
+            <StackPanel ScrollViewer.CanContentScroll="True">
+                <Image Source = "pack://application:,,,/WallFinishByCategory_v1;component/Images/OpenPlugin.png"
+                       Width="500px"/>                
+                <TextBlock x:Name="InstText1" Text="1."/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/SelectCategory.png"
+                       Width="200px"/>
+                <TextBlock x:Name="InstText2" Text="2."/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/SelectFinishTypeByWallCategory.png"/>
+                <TextBlock x:Name="InstText3" Text="3."/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/SelectDafaultFinish.png"/>
+                <TextBlock x:Name="InstText4" Text="4."/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/SelectLevels.png"
+                       Width="200px"/>
+                <TextBlock x:Name="InstText5" Text="5."/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/StartWork.png"
+                       Width="500px"/>
+                <TextBlock x:Name="InstText6" Text="P.S "/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/SelectWorkset.png"/>
+                <TextBlock x:Name="InstText7" Text="You can"/>
+                <Image Source="pack://application:,,,/WallFinishByCategory_v1;component/Images/SelectRooms.png"
+                       Width="200px"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
