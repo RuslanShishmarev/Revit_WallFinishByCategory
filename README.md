@@ -3,7 +3,7 @@ Create new wall finish by different values wall model group parameter
 the plagin works with room boundary segments
 1) Plagin get the all rooms, document from the App.cs
 2) Create dictionary for rooms by categories for user selection and create the buttons with these categories after Initialize()
-3) After Category button click the plagin get all rooms from dctionary by the name of button
+3) After Category button click the plagin get all rooms from dctionary by the name of button<br>
   3.1) Get all levels by rooms and model group of walls around the rooms
   3.2) Put the model groups of walls as checkbox to view 
 4) Then plagin start work after startwork button click
