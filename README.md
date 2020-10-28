@@ -13,7 +13,7 @@ the plagin works with room boundary segments
   4.4) Go through all rooms by selected category and levels. Start loop<br>
     4.4.1) Get new axis for new wall<br>
     4.4.2) The main problem - get new axis for the new walls due the ProtoGeometry.dll.<br>
-    I this dll there is method to create the PolyCyrve on the Autodesk.DesignScript.Geometry.Curve. 
+    This dll has method to create the PolyCyrve on the Autodesk.DesignScript.Geometry.Curve. 
     When we get the boundary segments in room, we get all curves like Autodesk.Revit.DB.Curve.
     It should be converted to Autodesk.DesignScript.Geometry.Curve with RevitToProtoCurve.ToProtoType method from ProtoGeometry.dll.
     A few moments later this dll doesn't work. Because I use the axis from room, create model curve, move after, get curve and delete after. 
