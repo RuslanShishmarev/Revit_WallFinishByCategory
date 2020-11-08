@@ -17,7 +17,7 @@ the plagin works with room boundary segments
     When we get the boundary segments in room, we get all curves like Autodesk.Revit.DB.Curve.
     It should be converted to Autodesk.DesignScript.Geometry.Curve with RevitToProtoCurve.ToProtoType method from ProtoGeometry.dll.
     A few moments later this dll doesn't work. Because I use the axis from room, create model curve, move after, get curve and delete after. 
-    And then we have problem with moving model curves with Ark location curve. 
+    And then we have problem with moving model curves with Arc location curve. 
     When base line's name is Line, plagin create the Plane on room curve and get the vector by plane normal.
     In RoomWoker.cs there is method to get new curves with ProtoGeometry.dll (GetNewWallCurveWithProto).<br>
     4.4.3) Create the walls and set room parameters (name and number) to instance<br>
