@@ -1,6 +1,6 @@
 # Revit_WallFinishByCategory
 Create new wall finish by different values wall model group parameter
-the plagin works with room boundary segments
+the plugin works with room boundary segments
 1) Plagin get the all rooms, document from the App.cs
 2) Create dictionary for rooms by categories for user selection and create the buttons with these categories after Initialize()
 3) After Category button click the plagin get all rooms from dctionary by the name of button<br>
